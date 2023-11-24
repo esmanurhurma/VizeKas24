@@ -10,6 +10,12 @@ test_that("Spotify API Fonksiyonu Testleri", {
     expect_true(exists("spotify_search_artist"), "Test 2.1 geçemedi: spotify_search_artist değişkeni bulunamadı.")
   })
   
+  # Test 2.2
+  test_that("spotify_search_artist adlı değişkenin tipi 'function' olmalı.", {
+    expect_is(spotify_search_artist, "function", "Test 2.2 geçemedi: spotify_search_artist değişkeninin tipi 'function' olmalı.")
+  })
+  
+  
 
 
 

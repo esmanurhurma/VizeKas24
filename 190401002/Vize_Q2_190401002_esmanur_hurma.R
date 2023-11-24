@@ -21,4 +21,6 @@ spotify_search_artist <- function(artist_name) {
   response <- httr::GET(url = endpoint, query = query_params,
                         add_headers(Authorization = paste("Bearer", spotify_id)))
   
- 
+  # HTTP Status Code
+  status_code <- httr::status_code(response)
+  
